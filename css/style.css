@@ -1,16 +1,96 @@
 body{
-    color: blue;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    color:#343232;
+    font-family: "Lexend", sans-serif;
+    background-color:#FAF9F8;
+    margin: 0;
+    padding:0;
+}
+/* ---------------------------------------------------------header------------------------ */
+header{
+    background-color: #F4B346;
 }
 
-.container {
-    background-color: red;
+nav{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    min-width: 100vp;
-    min-height: 70vh;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
 }
+
+.nav__logo{
+    padding: 0.5rem;
+}
+
+    .nav__enlaces-list {
+        display: flex; 
+        list-style: none; 
+
+        margin: 1rem;
+        width: 40vw;
+        justify-content: space-between;
+      }
+
+
+      
+      .nav__enlaces {
+        display: flex;
+        margin-right: 1.25rem; 
+        align-items: center;
+
+      }
+
+            
+      .nav__enlace {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: #325068; 
+        padding-left: 1rem;
+      }
+
+/* ---------------------------------responsive------------------- */
+      @media (max-width: 768px) {
+
+        nav{
+            padding: 0.5rem
+        }
+        .nav__enlaces-list {
+          flex-direction: column;
+          width: 40vw;
+         padding: 0rem;
+
+        }
+        .nav__enlaces {
+            margin-bottom: 0.25rem;
+            margin-right: 0px; 
+          }
+
+       .nav__enlace{
+        font-size: 1.1rem;
+       }   
+      }
+
+
+/* ---------------------------------------------------------main------------------------ */
+main{
+    background-color:#E4F6F8;
+    padding: 1rem;
+}
+.container {
+    background-color:grey;
+    display: flex;
+}
+
+
+.container_1{
+    flex-direction: column;
+}
+
+.container_2, .container_3 {
+gap: 10px;
+
+}
+
 
 .item {
     width: 100px;
@@ -29,3 +109,8 @@ padding:10px 8px;
 
 .section{}
 .section__button{}
+
+/* ---------------------------------------------------------footer------------------------ */
+footer{
+    background-color:grey;
+}
