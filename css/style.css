@@ -1,116 +1,168 @@
-body{
-    color:#343232;
-    font-family: "Lexend", sans-serif;
-    background-color:#FAF9F8;
-    margin: 0;
-    padding:0;
+body {
+  color: #343232;
+  background-color: white;
+  font-family: "Lexend", sans-serif;
+  background-color: #faf9f8;
+  margin: 0;
+  padding: 0;
 }
 /* ---------------------------------------------------------header------------------------ */
-header{
-    background-color: #F4B346;
+header {
+  background-color: #f4b346;
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
-.nav__logo{
-    padding: 0.5rem;
+.nav__logo {
+  padding: 0.5rem;
 }
 
-    .nav__enlaces-list {
-        display: flex; 
-        list-style: none; 
+.nav__enlaces-list {
+  display: flex;
+  list-style: none;
 
-        margin: 1rem;
-        width: 40vw;
-        justify-content: space-between;
-      }
+  margin: 1rem;
+  width: 40vw;
+  justify-content: space-between;
+}
 
+.nav__enlaces {
+  display: flex;
+  margin-right: 1.25rem;
+  align-items: center;
+}
 
-      
-      .nav__enlaces {
-        display: flex;
-        margin-right: 1.25rem; 
-        align-items: center;
+.nav__enlace {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #325068;
+  padding-left: 1rem;
+}
 
-      }
+.novedades {
+  background-color: #2a8795;
+  color: white;
 
-            
-      .nav__enlace {
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1.25rem;
-        color: #325068; 
-        padding-left: 1rem;
-      }
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+}
+
+.novedades button {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.novedades button:hover {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem;
+  color: #325860;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
 
 /* ---------------------------------responsive------------------- */
-      @media (max-width: 768px) {
+@media (max-width: 768px) {
+  nav {
+    padding: 0.5rem;
+  }
+  .nav__enlaces-list {
+    flex-direction: column;
+    width: 40vw;
+    padding: 0rem;
+  }
+  .nav__enlaces {
+    margin-bottom: 0.25rem;
+    margin-right: 0px;
+  }
 
-        nav{
-            padding: 0.5rem
-        }
-        .nav__enlaces-list {
-          flex-direction: column;
-          width: 40vw;
-         padding: 0rem;
-
-        }
-        .nav__enlaces {
-            margin-bottom: 0.25rem;
-            margin-right: 0px; 
-          }
-
-       .nav__enlace{
-        font-size: 1.1rem;
-       }   
-      }
-
+  .nav__enlace {
+    font-size: 1.1rem;
+  }
+}
 
 /* ---------------------------------------------------------main------------------------ */
-main{
-    background-color:#E4F6F8;
-    padding: 1rem;
+
+main {
+  padding: 1rem;
+}
+
+.main__section {
+  padding: 1rem;
+}
+
+.section__1 {
+  background-color: #27aabf;
+}
+
+.section__2 {
+  background-color: #e4f6f8;
+}
+.section__3 {
+  background-color: #325068;
+  color: white;
 }
 .container {
-    background-color:grey;
-    display: flex;
+  background-color: grey;
+  display: flex;
+  border: 1px solid blue;
+  margin: 1rem;
 }
 
-
-.container_1{
-    flex-direction: column;
+.container_1 {
+  display: flex;
+  flex-direction: row;
 }
 
-.container_2, .container_3 {
-gap: 10px;
-
+.container_2 {
+  display: flex;
+  flex-direction: column;
 }
 
+.container_2_1 {
+  width: fill;
+  height: 3rem;
+}
+
+.container_2_2_1,
+.container_2_2_1 {
+  width: 3rem;
+  height: 3rem;
+}
 
 .item {
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    border: solid ;
-    margin: 3px;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: solid;
+  margin: 3px;
 }
 
-.button{
-background-color:#2C8B8B;
-color: white;
-border: none;
-padding:10px 8px;
+.button {
+  background-color: #2c8b8b;
+  color: white;
+  border: none;
+  padding: 10px 8px;
 }
 
-.section{}
-.section__button{}
+.section {
+}
+.section__button {
+}
 
 /* ---------------------------------------------------------footer------------------------ */
-footer{
-    background-color:grey;
+footer {
+  background-color: grey;
 }
