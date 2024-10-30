@@ -1,14 +1,15 @@
 body {
   color: #343232;
-  background-color: white;
+  background-color: FFF2F9;
   font-family: "Lexend", sans-serif;
   background-color: #faf9f8;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
+
 /* ---------------------------------------------------------header------------------------ */
 header {
-  background-color: #f4b346;
+  background-color: #53424b;
 }
 
 nav {
@@ -25,7 +26,6 @@ nav {
 .nav__enlaces-list {
   display: flex;
   list-style: none;
-
   margin: 1rem;
   width: 40vw;
   justify-content: space-between;
@@ -41,36 +41,48 @@ nav {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.25rem;
-  color: #325068;
+  color: #fff2f9;
   padding-left: 1rem;
 }
 
 .novedades {
-  background-color: #2a8795;
-  color: white;
-
+  background-color: #baa6b1;
+  color: #422735;
   display: flex;
   justify-content: space-around;
-
   align-items: center;
+  height: 1rem;
+}
+.novedad {
+  margin: 0;
 }
 
 .novedades button {
   background-color: transparent;
   border: none;
   padding: 0.5rem;
-  color: white;
+  background-image: linear-gradient(
+    to left,
+    #ffd3eb,
+    #f2cae0,
+    #e5c2d5,
+    #d8b9ca,
+    #cbb1bf,
+    #bca4b1,
+    #ad98a3,
+    #9f8c96,
+    #8b7982,
+    #78666f,
+    #65545d,
+    #53424b
+  );
   font-weight: 400;
   font-size: 1.25rem;
+  width: 100%;
 }
 
 .novedades button:hover {
-  background-color: transparent;
-  border: none;
-  padding: 0.5rem;
-  color: #325860;
-  font-weight: 400;
-  font-size: 1.25rem;
+  color: white;
 }
 
 /* ---------------------------------responsive------------------- */
@@ -94,52 +106,121 @@ nav {
 }
 
 /* ---------------------------------------------------------main------------------------ */
-
 main {
-  padding: 1rem;
+  background-color: #fff2f9;
 }
 
+main h2 {
+  margin: 1rem 2rem 0rem 2rem;
+}
 .main__section {
-  padding: 1rem;
+  padding: 0.5rem 4rem;
 }
 
 .section__1 {
-  background-color: #27aabf;
+  background-color: #eddccb;
+
+  padding: 2rem 0 4rem 0;
+  border-radius: 5rem 0 5rem 0;
 }
 
-.section__2 {
-  background-color: #e4f6f8;
-}
 .section__3 {
-  background-color: #325068;
+  background-color: #baa6b1;
+
   color: white;
 }
+
 .container {
-  background-color: grey;
   display: flex;
-  border: 1px solid blue;
   margin: 1rem;
 }
 
 .container_1 {
   display: flex;
   flex-direction: row;
+  margin: 0;
+  height: 70vh;
+  padding: 1rem;
 }
 
 .container_2 {
   display: flex;
   flex-direction: column;
+  width: 60%;
+  height: 100%;
+  margin: 0;
+  padding: 1rem 0.5rem 1rem 1rem;
+}
+
+.container_3 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  margin: 1rem 0rem;
 }
 
 .container_2_1 {
-  width: fill;
-  height: 3rem;
+  height: 60%;
+  flex: 1;
+  box-sizing: border-box;
+  padding: 0 0 0.5rem 0;
+  margin: 0;
 }
 
-.container_2_2_1,
+.container_2_1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container_2_2 {
+  display: flex;
+  flex-direction: row;
+  height: 40%;
+  flex: 1;
+  box-sizing: border-box;
+  padding: 0.5rem 0rem 0rem 0rem;
+  margin: 0;
+}
 .container_2_2_1 {
-  width: 3rem;
-  height: 3rem;
+  flex: 1; /* Los hijos ocupan el mismo ancho */
+  margin: 0 0.5rem 0 0;
+  box-sizing: border-box;
+}
+
+.container_2_2_2 {
+  flex: 1; /* Los hijos ocupan el mismo ancho */
+  margin: 0 0 0 0.5rem;
+  box-sizing: border-box;
+}
+
+.container_3_1 {
+  flex: 1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.container_2_2_1 img,
+.container_2_2_2 img,
+.container_3_1 img {
+  width: 100%; /* La imagen ocupará todo el ancho del div */
+  height: 100%; /* La imagen ocupará todo el alto del div */
+  object-fit: cover; /* Ajusta la imagen sin distorsionarla, recortando si es necesario */
+}
+
+/* ---------------------------------responsive------------------- */
+@media (max-width: 768px) {
+  .container_1 {
+    flex-direction: column;
+    height: auto;
+  }
+  .container_2,
+  .container_3 {
+    width: auto;
+  }
 }
 
 .item {
@@ -154,15 +235,18 @@ main {
   background-color: #2c8b8b;
   color: white;
   border: none;
-  padding: 10px 8px;
-}
-
-.section {
-}
-.section__button {
+  padding: 4px 8px;
 }
 
 /* ---------------------------------------------------------footer------------------------ */
 footer {
-  background-color: grey;
+  background-image: radial-gradient(
+    circle,
+    #ffd3eb,
+    #d1acc0,
+    #a58797,
+    #7b6370,
+    #53424b
+  );
+  height: 30vh;
 }

@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Formulario de contacto</title>
-</head>
-<body>
-
+  </head>
+  <body>
+    <!-- ------------------header----------------- -->
     <header>
-        <nav class="nav">
-          <div class="nav__logo">
-            <a href="../index.html">
-              <img src="../img/Logo completo.png" alt="Logo"  height="100">
-            </a>
-          </div>
-  
-          <div class="nav__enlaces">
-            <ul class="nav__enlaces-list">
-              <li class="nav__enlaces">
-                <a href="../pages/productos.html" class="nav__enlace">Productos</a>
-              </li>
-              <li class="nav-enlaces">
-                <a href="../pages/servicios.html" class="nav__enlace">Reseñas</a>
-              </li>
-                          <li class="nav-enlaces">
-                <a href="../pages/contacto.html" class="nav__enlace">Contacto</a>
-              </li>
-            </ul>
-          </div> 
-  
-        </nav>
-      </header>
+      <nav class="nav">
+        <div class="nav__logo">
+          <img src="../img/Logo C&C.png" alt="Logo" height="120" />
+        </div>
 
-
-
+        <div class="nav__enlaces">
+          <ul class="nav__enlaces-list">
+            <li class="nav__enlaces">
+              <a href="./pages/productos.html" class="nav__enlace">Productos</a>
+            </li>
+            <li class="nav-enlaces">
+              <a href="./pages/comentarios.html" class="nav__enlace">Reseñas</a>
+            </li>
+            <li class="nav-enlaces">
+              <a href="./pages/contacto.html" class="nav__enlace">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="novedades">
+        <button>
+          <p class="novedad">Envíos gratis en compras desde $20.000!</p>
+        </button>
+      </div>
+    </header>
 
     <main>
-        <section class="main__section section_3">
-            <form action="https://formspree.io/f/mjkvvbly" method="POST">
-              <label for="nombre">Nombre</label>
-              <input
-                type="text"
-                name="nombre"
-                id="nombre"
-                placeholder="Ingrese su nombre"
-                required
-              />
-              <br />
-              <input type="email" name="" id="" placeholder="ingrese su email" />
-              <br />
-              <input type textarea id="" placeholder="" />
-              <button type="submit">Enviar</button>
-            </form>
-          </section>
+      <section class="main__section section_3">
+        <form action="https://formspree.io/f/mjkvvbly" method="POST">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Ingrese su nombre"
+            required
+          />
+          <br />
+          <input type="email" name="" id="" placeholder="ingrese su email" />
+          <br />
+          <input type textarea id="" placeholder="" />
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>
