@@ -352,15 +352,12 @@ footer {
   background-image: linear-gradient(
     to left,
     #53424b,
-    /* Oscuro a la izquierda */ #7b6370,
+    #7b6370,
     #a58797,
     #d1acc0,
-    #ffd3eb /* Claro a la derecha */
+    #ffd3eb
   );
 }
-
-/* 
-no se de donde viene  */
 
 .item {
   width: 100px;
