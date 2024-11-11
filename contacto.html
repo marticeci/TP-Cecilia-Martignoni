@@ -29,7 +29,7 @@
               <a href="./productos.html" class="nav__enlace">Productos</a>
             </li>
             <li class="nav-enlaces">
-              <a href="./resenas.html" class="nav__enlace">Reseñas</a>
+              <a href="./resenias.html" class="nav__enlace">Reseñas</a>
             </li>
             <li class="nav-enlaces">
               <a href="./contacto.html" class="nav__enlace">Contacto</a>
@@ -45,24 +45,58 @@
     </header>
 
     <main>
-      <br /><br />
-      <section class="main__section section_3">
-        <form action="https://formspree.io/f/mjkvvbly" method="POST">
-          <label for="nombre">Nombre</label>
-          <input
-            type="text"
-            name="nombre"
-            id="nombre"
-            placeholder="Ingrese su nombre"
-            required
-          />
-          <br />
-          <input type="email" name="" id="" placeholder="ingrese su email" />
-          <br />
-          <input type textarea id="" placeholder="" />
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
+      <div class="main__content">
+        <br /><br />
+        <section class="main__section section_3">
+          <h2>¡Hacenos llegar tu consulta para tortas personalizadas!</h2>
+          <div class="container container_contacto form-group">
+            <form action="https://formspree.io/f/mjkvvbly" method="POST">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Ingrese su nombre"
+                required
+              />
+              <br />
+              <label for="email">Correo electrónico</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="ingrese su email"
+              />
+              <br />
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                placeholder="Deje su mensaje y le responderemos en las próximas horas"
+                rows="4"
+                cols="50"
+              ></textarea>
+
+              <button class="" type="submit">Enviar</button>
+            </form>
+          </div>
+        </section>
+      </div>
     </main>
+        <footer>
+      <div class="footer-content">
+        <br />
+
+<h4>Endulzamos tus momentos especiales</h4>
+📍 Dirección: <a href="https://www.google.com/maps?q=Av.Cabildo+1800,+Cdad+Autónoma+de+Buenos+Aires" target="_blank">Av. Cabildo 1800, Ciudad de Buenos Aires</a><br>
+📞 Teléfono: <a href="https://wa.me/1234567890" target="_blank">5411-1234-5678</a><br>
+✉️ Correo:   <a href="mailto:moss@cakes.com">moss@cakes.com</a><br>
+🕒 Horarios: Lunes a sábado de 9:00 a 21:00 </p>
+
+<h4>
+🍰 Homemade cakes and candies</h4>
+      </div>
+              <br />
+    </footer>
   </body>
 </html>
