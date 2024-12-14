@@ -3,220 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="assets/favicon.png" type="image/png" />
-    <title>Moss productos</title>
   </head>
-  </body>
-  <!-- ------------------header----------------- -->
-  <header>
-    <nav class="nav">
-      <div class="nav__logo">
-        <a href="./index.html">
-          <img src="./img/Logo C&C.png" alt="Logo" height="120" />
-        </a>
+  <body>
+
+    <!-- ------------------header----------------- -->
+    <header>
+      <nav class="nav">
+        <div class="nav__logo">
+          <a href="./index.html">
+            <img src="./img/Logo C&C.png" alt="Logo" height="120" />
+          </a>
+        </div>
+
+        <div class="nav__enlaces">
+          <ul class="nav__enlaces-list">
+            <li class="nav__enlaces">
+              <a href="./productos.html" class="nav__enlace">Productos</a>
+            </li>
+            <li class="nav-enlaces">
+              <a href="./resenias.html" class="nav__enlace">Reseñas</a>
+            </li>
+            <li class="nav-enlaces">
+              <a href="./contacto.html" class="nav__enlace">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="novedades">
+        <button>
+          <p class="novedad">Envíos gratis en compras desde $20.000!</p>
+        </button>
       </div>
+    </header>
 
-      <div class="nav__enlaces">
-        <ul class="nav__enlaces-list">
-          <li class="nav__enlaces">
-            <a href="./productos.html" class="nav__enlace">Productos</a>
-          </li>
-          <li class="nav-enlaces">
-            <a href="./resenias.html" class="nav__enlace">Reseñas</a>
-          </li>
-          <li class="nav-enlaces">
-            <a href="./contacto.html" class="nav__enlace">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="novedades">
-      <button>
-        <p class="novedad">Envíos gratis en compras desde $20.000!</p>
-      </button>
-    </div>
-  </header>
+    <!-- --------------------main----------------------------- -->
+    <main>
+      <h2>Carrito de compras</h2>
 
-  <!-- --------------------main----------------------------- -->
 
-  <main>
-    <br />
-    <div class="main__content">
-      <section class="main__section section__1">
-        <h1>Nuestros deliciosos productos</h1>
-        <p>
-          Explorá nuestra irresistible colección de tortas, cupcakes y postres
-          artesanales. Cada creación combina ingredientes de primera calidad con
-          diseños únicos, hechos a mano con amor y atención al detalle.
-        </p>
-        <p>
-          Desde tortas para celebraciones especiales hasta dulces pequeños
-          ideales para regalar, encontrarás opciones que despiertan los sentidos
-          y agregan magia a cada momento.
-        </p>
-        <p>
-          Nuestras recetas están pensadas para enamorar: capas esponjosas,
-          cremas suaves, y decoraciones que cuentan una historia de dulzura y
-          creatividad.
-        </p>
-        <p>
-          Elegí tu favorito y hacé de cualquier ocasión un recuerdo inolvidable.
-        </p>
-      </section>
-      <section id="cakes" class="section__productos section__2">
-        <h2>Cakes</h2>
-        <div class="tabla__productos">
-          <div class="producto producto_1">
-            <p>Torta multicolor</p>
-            <img src="./img/torta_1.jpg" alt="torta multicolor" loading="lazy">
-          </div>
-          <div class="producto producto_2">
-            <p>Torta conejos</p>
-            <img src="./img/torta_conejos.jpg" alt="torta infantil" loading="lazy">
-          </div>
-          <div class="producto producto_3">
-            <p>Torta confetti</p>
-            <img src="./img/torta_confetti.jpg" alt="torta confetti" loading="lazy">
-          </div>
-          <div class="producto producto_4"> 
-            <p>Torta para cumples de 15 </p>
-            <img src="./img/torta_15_años.jpg" alt="torta para festejo 15 años" loading="lazy">
-          </div>
-          <div class="producto producto_5">
-            <p>Torta de bodas </p>
-            <img src="./img/torta_bodas.jpg" alt="torta de bodas" loading="lazy">
-          </div>
-          <div class="producto producto_6">
-            <p>Cheesecake </p>
-            <img src="./img/torta_cheesecake.jpg" alt="cheeesecake" loading="lazy">
-          </div>
+      <div id="listado-productos"></div>
+
+<!-- Botón para abrir el carrito (visible por defecto) -->
+<button id="abrir-carrito">Abrir carrito</button>
+
+<!-- Slider del carrito (inicialmente oculto) -->
+<div id="carrito-slider" class="oculto">
+  <button id="cerrar-carrito">Cerrar Carrito</button>
+  <h2>Carrito</h2>
+  <p id="total">Total: $0</p>
+  <div id="carrito-contenido"></div>
+
+</div>
+
+      <h1>Productos</h1>
+      <section class="section__products">
+        <br>
+        <h2>Productos disponibles - entrega en AMBA en 24 hs</h2>
+        <br>
+        <div id="listado-productos">
+          <!-- Aquí se renderizarán los productos dinámicamente -->
         </div>
       </section>
+    </main>
 
-
-      <section id="cupcakes" class="section__productos section__3">
-        <h2>Cupcakes y minitartas</h2>
-        <div class="tabla__productos">
-          <div class="producto producto_1">
-            <p>Tartas de crema </p>
-            <img src="./img/cupcake.jpg" alt="tartas crema" loading="lazy">
-          </div>
-          <div class="producto producto_2">
-            <p>Cupcakes de chocolate </p>
-            <img src="./img/cupcakes_5.jpg" alt="cupcake de chocolate" loading="lazy">
-          </div>
-          <div class="producto producto_3">
-            <p>Cupcakes de halloween </p>
-            <img src="./img/cupcake_3.jpg" alt="cupcake de halloween" loading="lazy">
-          </div>
-          <div class="producto producto_4">
-            <p>Cupcakes chispitas</p>
-            <img src="./img/cupcake_6.jpg" alt="cupcakes chispitas" loading="lazy">
-          </div>
-          <div class="producto producto_5">
-            <p>Cupcakes nubes de frutilla</p>
-            <img src="./img/cupcake_1.jpg" alt="cupcakes de frutilla" loading="lazy">
-          </div>
-          <div class="producto producto_6">
-            <p>Rainbow cupcakes</p>
-            <img src="./img/cupcakes_1.jpg" alt="rainbow cupcakes" loading="lazy">
-          </div>
-        </div>
-      </section>
-            <section id="candies" class="section__productos section__4">
-        <h2>Cakepops y cookies</h2>
-        <div class="tabla__productos">
-          <div class="producto producto_1">
-            <p>Cake pops para princesas </p>
-            <img src="./img/cakepops.jpg" alt="Cake pops para princesas" loading="lazy">
-          </div>
-
-          <div class="producto producto_2">
-            <p>Cake pops de chocolate negro </p>
-            <img src="./img/cakepop_1.jpg" alt="Cake pops de chocolate" loading="lazy">
-          </div>
-
-          <div class="producto producto_3">
-            <p>Cake pops de chocolate blanco</p>
-            <img src="./img/cakepop_4.jpg" alt="Cake pops de chocolate blanco" loading="lazy">
-          </div>
-
-          <div class="producto producto_4">
-            <p>Donuts Homero</p>
-            <img src="./img/donuts_1.jpg" alt="Donuts Homero" loading="lazy">
-          </div>
-
-          <div class="producto producto_5">
-            <p>Cookies full chocolate</p>
-            <img src="./img/cookie_5.jpg" alt="Cookies full chocolate" loading="lazy">
-          </div>
-
-          <div class="producto producto_6">
-            <p>Cookies navideñas</p>
-            <img src="./img/cookie_3.jpg" alt="Cookies navideñas" loading="lazy">
-          </div>
-
-
-        </div>
-      </section>
-            </section>
-            <section id="macarons" class="section__productos section__5">
-        <h2>Macarons</h2>
-        <div class="tabla__productos">
-          <div class="producto producto_1">
-            <p>Macarons de menta</p>
-            <img src="./img/macarons_1.jpg" alt="Macarons de menta" loading="lazy">
-          </div>
-
-          <div class="producto producto_2">
-            <p>Macarons de choco y frambuesa</p>
-            <img src="./img/macarons_2.jpg" alt="Macarons dede choco y frambuesa" loading="lazy">
-          </div>
-
-          <div class="producto producto_3">
-            <p>Macarons de hibiscus y lavanda</p>
-            <img src="./img/macarons_3.jpg" alt="Macarons hibiscus y lavanda" loading="lazy">
-          </div>
-
-          <div class="producto producto_4">
-            <p>Macarons de halloween</p>
-            <img src="./img/macarons_4.jpg" alt="Macarons de halloween" loading="lazy">
-          </div>
-
-          <div class="producto producto_5">
-            <p>Macarons cítricos</p>
-            <img src="./img/macarons_6.jpg" alt="Macarons cítricos" loading="lazy">
-          </div>
-          <div class="producto producto_6">
-            <p>Macarons infantiles</p>
-            <img src="./img/macarons_5.jpg" alt="Macarons ifantiles" loading="lazy">
-          </div>
-
-        </div>
-      </section>
-    </div>
-  </main>
-      <footer>
+    <!-- --------------------footer----------------------------- -->
+    <footer>
       <div class="footer-content">
         <br />
-
-<h4>Endulzamos tus momentos especiales</h4>
-📍 Dirección: <a href="https://www.google.com/maps?q=Av.Cabildo+1800,+Cdad+Autónoma+de+Buenos+Aires" target="_blank">Av. Cabildo 1800, Ciudad de Buenos Aires</a><br>
-📞 Teléfono: <a href="https://wa.me/1234567890" target="_blank">5411-1234-5678</a><br>
-✉️ Correo:   <a href="mailto:moss@cakes.com">moss@cakes.com</a><br>
-🕒 Horarios: Lunes a sábado de 9:00 a 21:00 </p>
-
-<h4>
-🍰 Homemade cakes and candies</h4>
+        <h4>Endulzamos tus momentos especiales</h4>
+        📍 Dirección: <a href="https://www.google.com/maps?q=Av.Cabildo+1800,+Cdad+Autónoma+de+Buenos+Aires" target="_blank">Av. Cabildo 1800, Ciudad de Buenos Aires</a><br>
+        📞 Teléfono: <a href="https://wa.me/1234567890" target="_blank">5411-1234-5678</a><br>
+        ✉️ Correo: <a href="mailto:moss@cakes.com">moss@cakes.com</a><br>
+        🕒 Horarios: Lunes a sábado de 9:00 a 21:00 </p>
+        <h4>🍰 Homemade cakes and candies</h4>
       </div>
-              <br />
+      <br />
     </footer>
-  <body>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>
