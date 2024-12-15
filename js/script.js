@@ -1,3 +1,4 @@
+//constantes para listado de productos y carrito
 const slider = document.querySelector("#carrito-slider");
 const botonAbrir = document.querySelector("#abrir-carrito");
 const botonCerrar = document.querySelector("#cerrar-carrito");
@@ -5,12 +6,20 @@ const carritoContenido = document.querySelector("#carrito-contenido");
 const totalCarrito = document.querySelector("#total");
 const listadoProductos = document.querySelector("#listado-productos");
 
+
+
+
+
+
+// ------------------Productos y carrito--------------------
+
+
 let carritoItems = [];
 let total = 0;
 
-// Función para actualizar el carrito
+// Actualizar y limpiar el carrito
 const actualizarCarrito = () => {
-  carritoContenido.innerHTML = ""; // Limpia el carrito
+  carritoContenido.innerHTML = ""; 
 
   if (carritoItems.length === 0) {
     carritoContenido.innerHTML = "<p>El carrito está vacío</p>";

@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Torta multicolor",
     "slug": "producto-1",
-    "description": "Torta de chocolate rellena de crema de vainilla con galletitas oreos",
+    "description": "Torta de chocolate rellena de crema de vainilla con granas de colores",
     "image": "../img/torta_1.jpg",
     "price": 15000,
     "stock": 2
@@ -19,63 +19,103 @@
   {
     "id": 3,
     "title": "Torta confetti",
-    "description": "Torta de vainilla con un centro de confettis",
+    "description": "Torta de chocolate y crema bariloche con un centro sorpresa de confettis",
     "image": "../img/torta_confetti.jpg",
     "price": 18000,
     "stock": 2
   },
   {
     "id": 4,
+    "title": "Rainbow cake",
+    "description": "Bizcochos de vainilla con buttercream de limón",
+    "image": "../img/rainbow-cake.jpg",
+    "price": 18000,
+    "stock": 2
+  },
+  {
+    "id": 5,
     "title": "Torta para cumples de 15",
-    "description": "Delicada y femenina torta de vainilla rellena de mousse de dulce de leche y merengues",
+    "description": "Delicada torta de vainilla rellena de mousse de café y merengues",
     "image": "../img/torta_15_años.jpg",
     "price": 30000,
     "stock": 10
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "cupcakes chispitas",
-    "description": "Deliciosas tartas individuales de crema diplomata y pistachos",
+    "description": "Cupcakes de colores rellenos de mermelada de frutilla y butter de crema",
     "image": "../img/cupcake_6.jpg",
     "price": 3000,
     "stock": 10
   },
-     {
-    "id": 6,
+  {
+    "id": 7,
+    "title": "Rainbow cupcakes",
+    "description": "Cupcakes de colores sorpresa, corazón de chocolate y crema rusa",
+    "image": "../img/cupcakes_1.jpg",
+    "price": 3200,
+    "stock": 10
+  },
+  {
+    "id": 8,
+    "title": "Cupcakes nubes de frutilla",
+    "description": "Cupcakes de vainilla y frutillas con crema diplomata y meregue suizo",
+    "image": "../img/cupcake_1.jpg",
+    "price": 3000,
+    "stock": 10
+  },
+  {
+    "id": 9,
+    "title": "Tartas de chocolate blanco",
+    "description": "Delicadas tartas individuales de ganache de chocolate blanco",
+    "image": "../img/cupcake.jpg",
+    "price": 3000,
+    "stock": 10
+  },
+  {
+    "id": 10,
     "title": "Cake pops de chocolate negro",
-    "description": "Delicada y femenina torta de vainilla rellena de mousse de dulce de leche y merengues",
+    "description": "Corazón de bizcochuelo y dulce de leche bañados en chocolate con leche",
     "image": "../img/cakepop_1.jpg",
     "price": 2800,
     "stock": 10
   }, 
    {
-    "id": 7,
-    "title": "Princess Cakepops",
-    "description": "Delicada y femenina torta de vainilla rellena de mousse de dulce de leche y merengues",
+    "id": 11,
+    "title": "Princess birthday",
+    "description": "6 cupcakes de chocolate y 6 cakepops de dulce de leche",
     "image": "../img/cakepops.jpg",
-    "price": 2500,
+    "price": 32000,
     "stock": 10
   },  
   {
-    "id": 8,
+    "id": 12,
     "title": "Cookies full chocolate",
-    "description": "Delicada y femenina torta de vainilla rellena de mousse de dulce de leche y merengues",
+    "description": "Crujientes cruble cookies de triple chocolate",
     "image": "../img/cookie_5.jpg",
     "price": 1000,
     "stock": 30
   }, 
    {
-    "id": 9,
+    "id": 13,
     "title": "Cookies navideñas",
-    "description": "Delicada y femenina torta de vainilla rellena de mousse de dulce de leche y merengues",
+    "description": "Una combinación de 12 galletitas glaseadas para compartir",
     "image": "../img/cookie_3.jpg",
-    "price": 800,
+    "price": 12000,
     "stock": 100
   },  
   {
-    "id": 10,
+    "id": 14,
+    "title": "Macarons rellenos de ganache",
+    "description": "Crujientes y húmedos macarons rellenos de ganache de pistacho",
+    "image": "../img/macarons.jpg",
+    "price": 800,
+    "stock": 100
+  }, 
+  {
+    "id": 15,
     "title": "Donuts Homero",
-    "description": "Delicada y femenina torta de vainilla rellena de mousse de dulce de leche y merengues",
+    "description": "Húmedos y esponjosos donuts rellenas de dulce de leche",
     "image": "../img/donuts_1.jpg",
     "price": 3200,
     "stock": 24

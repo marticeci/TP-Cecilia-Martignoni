@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LocalStorage</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    
+    <title>Moss</title>
   </head>
   <body>
 
@@ -19,6 +29,9 @@
 
         <div class="nav__enlaces">
           <ul class="nav__enlaces-list">
+            <li class="nav__enlaces">
+              <a href="index.html" class="nav__enlace">Inicio</a>
+          </li>
             <li class="nav__enlaces">
               <a href="./productos.html" class="nav__enlace">Productos</a>
             </li>
@@ -39,11 +52,42 @@
     </header>
 
     <!-- --------------------main----------------------------- -->
-    <main>
-      <h2>Carrito de compras</h2>
+    <main >
+
+      <div class="main__content">
+      <br><br>
+   
+      <section class="main__section section__1">
+
+        <h1>Nuestros productos</h1>
+        <p>
+          Explorá nuestra irresistible colección de tortas, cupcakes y postres
+          artesanales. Cada creación combina ingredientes de primera calidad con
+          diseños únicos, hechos a mano con amor y atención al detalle.
+        </p>
+        <p>
+          Elegí tu favorito y hacé de cualquier ocasión un recuerdo inolvidable.
+        </p>
+      </section>
 
 
-      <div id="listado-productos"></div>
+
+
+      <section class="section__products">
+      
+   
+        <div id="listado-productos">
+          <!-- Aquí se renderizarán los productos dinámicamente -->
+        </div>
+      </section>
+      <!-- <div class="main__content">
+
+        <div id="listado-productos"></div>
+      </div> -->
+
+
+
+
 
 <!-- Botón para abrir el carrito (visible por defecto) -->
 <button id="abrir-carrito">Abrir carrito</button>
@@ -56,16 +100,9 @@
   <div id="carrito-contenido"></div>
 
 </div>
+</div>
 
-      <h1>Productos</h1>
-      <section class="section__products">
-        <br>
-        <h2>Productos disponibles - entrega en AMBA en 24 hs</h2>
-        <br>
-        <div id="listado-productos">
-          <!-- Aquí se renderizarán los productos dinámicamente -->
-        </div>
-      </section>
+
     </main>
 
     <!-- --------------------footer----------------------------- -->
