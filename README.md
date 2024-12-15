@@ -1,8 +1,12 @@
 # Mi Proyecto
 
-Página para comercializar tortas y pasteles, con una home y tres páginas de productos, reseñas y un formulario de contacto
+Página para la venta de tortas, pasteles y dulces. 
+Se desarrollaron tres páginas de:
+1) productos, desde página de json y carrito de compras
+2) reseñas, con alineación en grid
+3) formulario de contacto, validado con JS
 
 
-<img src="./img/cupcake_6.jpg" alt="Texto alternativo" width="300"/>
 
-![Texto alternativo](./img/cakepop_4.jpg)
+<img src="./img/cupcake.jpg" alt="Tartas de crema de chocolate blanco" width="800"/>
+
